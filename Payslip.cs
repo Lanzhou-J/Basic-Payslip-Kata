@@ -1,5 +1,6 @@
 ﻿using System;
 using userinput;
+using tool;
 
 namespace payslip
 {
@@ -7,8 +8,14 @@ namespace payslip
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            userinput.UserInput.UserInputMain();
+            void greetUser(){
+              Console.WriteLine("Welcome to the payslip generator!");
+            }
+
+            greetUser();
+            Tool.ToolMain();
+
+            UserInput.UserInputMain();
         }
     }
 }

@@ -1,5 +1,6 @@
 using System;
-using System.Collections.Generic; 
+using System.Collections.Generic;
+using tool;
 // using System.DateTime;
 
 namespace userinput
@@ -9,24 +10,12 @@ namespace userinput
 
         public static void UserInputMain()
         {
-            void greetUser(){
-              Console.WriteLine("Welcome to the payslip generator!");
-            }
-
             string collectUserDataDetail(string inputCategory)
             {
                 Console.WriteLine("Please input your " + inputCategory + ":");
                 string userInput = Console.ReadLine();
                 return userInput;
             }
-
-            void printDictionary(Dictionary<string, string> userDataSet){
-              foreach(KeyValuePair<string, string> keyValuePair in userDataSet){
-                Console.WriteLine("Key={0}, Value={1}", keyValuePair.Key, keyValuePair.Value);
-              }
-            }
-
-            greetUser();
 
             Dictionary<string, string> userDataSet = new Dictionary<string, string>(); 
 
@@ -38,7 +27,8 @@ namespace userinput
             userDataSet["paymentEndDate"] = collectUserDataDetail("payment end date");
             // Console.WriteLine(userDataSet);
 
-            printDictionary(userDataSet);
+            Tool.ToolMain();
+            Tool.PrintDictionary(userDataSet);
         }
 
     }
