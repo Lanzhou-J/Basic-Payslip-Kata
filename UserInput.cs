@@ -30,6 +30,7 @@ namespace userinput
             userDataSet["superRate"] = collectUserDataDetail("super rate");
             userDataSet["paymentStartDate"] = collectUserDataDetail("payment start date");
             userDataSet["paymentEndDate"] = collectUserDataDetail("payment end date");
+            Console.WriteLine(userDataSet);
         }
 
     }
