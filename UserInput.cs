@@ -7,7 +7,7 @@ namespace userinput
     public class UserInput
     {
 
-        public static void UserInputMain()
+        public static Dictionary<string, string> UserInputMain()
         {
             string collectUserDataDetail(string inputCategory)
             {
@@ -24,10 +24,11 @@ namespace userinput
             userDataSet["superRate"] = collectUserDataDetail("super rate");
             userDataSet["paymentStartDate"] = collectUserDataDetail("payment start date");
             userDataSet["paymentEndDate"] = collectUserDataDetail("payment end date");
-            // Console.WriteLine(userDataSet);
 
             Tool.SeparateCode();
             Tool.PrintDictionary(userDataSet);
+
+            return userDataSet;
         }
 
     }
