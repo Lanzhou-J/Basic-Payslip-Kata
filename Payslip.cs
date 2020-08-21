@@ -31,8 +31,6 @@ namespace payslip
             paySlipDataSet["Net Income"] = netIncome.ToString();
             paySlipDataSet["Super"] = super.ToString();
             
-            
-
             Tool.PrintDictionary(paySlipDataSet);
 
             Tool.SeparateCode();
