@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using tool;
-// using System.DateTime;
 
 namespace userinput
 {
@@ -27,7 +26,7 @@ namespace userinput
             userDataSet["paymentEndDate"] = collectUserDataDetail("payment end date");
             // Console.WriteLine(userDataSet);
 
-            Tool.ToolMain();
+            Tool.separateCode();
             Tool.PrintDictionary(userDataSet);
         }
 

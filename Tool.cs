@@ -4,13 +4,9 @@ namespace tool
 {
     public static class Tool
     {
-        public static void ToolMain()
+        public static void separateCode()
         {
-            void separateCode(){
               Console.WriteLine("");
-            }
-            separateCode();
-           
         }
         public static void PrintDictionary(Dictionary<string, string> userDataSet)
         {
