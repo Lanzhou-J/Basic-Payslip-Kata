@@ -4,7 +4,7 @@ namespace tool
 {
     public static class Tool
     {
-        public static void separateCode()
+        public static void SeparateCode()
         {
               Console.WriteLine("");
         }
