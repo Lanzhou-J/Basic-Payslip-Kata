@@ -13,7 +13,7 @@ namespace payslip
             }
 
             greetUser();
-            Tool.separateCode();
+            Tool.SeparateCode();
 
             UserInput.UserInputMain();
         }
