@@ -1,0 +1,12 @@
+/Users/lanzhou.jiang/Desktop/C-sharp/payslip/obj/Debug/netcoreapp3.1/payslip.csprojAssemblyReference.cache
+/Users/lanzhou.jiang/Desktop/C-sharp/payslip/obj/Debug/netcoreapp3.1/payslip.AssemblyInfoInputs.cache
+/Users/lanzhou.jiang/Desktop/C-sharp/payslip/obj/Debug/netcoreapp3.1/payslip.AssemblyInfo.cs
+/Users/lanzhou.jiang/Desktop/C-sharp/payslip/obj/Debug/netcoreapp3.1/payslip.csproj.CoreCompileInputs.cache
+/Users/lanzhou.jiang/Desktop/C-sharp/payslip/bin/Debug/netcoreapp3.1/payslip.deps.json
+/Users/lanzhou.jiang/Desktop/C-sharp/payslip/bin/Debug/netcoreapp3.1/payslip.runtimeconfig.json
+/Users/lanzhou.jiang/Desktop/C-sharp/payslip/bin/Debug/netcoreapp3.1/payslip.runtimeconfig.dev.json
+/Users/lanzhou.jiang/Desktop/C-sharp/payslip/bin/Debug/netcoreapp3.1/payslip.dll
+/Users/lanzhou.jiang/Desktop/C-sharp/payslip/bin/Debug/netcoreapp3.1/payslip.pdb
+/Users/lanzhou.jiang/Desktop/C-sharp/payslip/obj/Debug/netcoreapp3.1/payslip.dll
+/Users/lanzhou.jiang/Desktop/C-sharp/payslip/obj/Debug/netcoreapp3.1/payslip.pdb
+/Users/lanzhou.jiang/Desktop/C-sharp/payslip/obj/Debug/netcoreapp3.1/payslip.genruntimeconfig.cache
