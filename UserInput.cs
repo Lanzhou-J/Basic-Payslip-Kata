@@ -20,6 +20,12 @@ namespace userinput
                 return userInput;
             }
 
+            void printDictionary(Dictionary<string, string> userDataSet){
+              foreach(KeyValuePair<string, string> keyValuePair in userDataSet){
+                Console.WriteLine("Key={0}, Value={1}", keyValuePair.Key, keyValuePair.Value);
+              }
+            }
+
             greetUser();
 
             Dictionary<string, string> userDataSet = new Dictionary<string, string>(); 
@@ -30,7 +36,9 @@ namespace userinput
             userDataSet["superRate"] = collectUserDataDetail("super rate");
             userDataSet["paymentStartDate"] = collectUserDataDetail("payment start date");
             userDataSet["paymentEndDate"] = collectUserDataDetail("payment end date");
-            Console.WriteLine(userDataSet);
+            // Console.WriteLine(userDataSet);
+
+            printDictionary(userDataSet);
         }
 
     }
