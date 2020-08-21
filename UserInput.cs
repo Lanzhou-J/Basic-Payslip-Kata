@@ -26,7 +26,7 @@ namespace userinput
             userDataSet["paymentEndDate"] = collectUserDataDetail("payment end date");
 
             Tool.SeparateCode();
-            Tool.PrintDictionary(userDataSet);
+            // Tool.PrintDictionary(userDataSet);
 
             return userDataSet;
         }

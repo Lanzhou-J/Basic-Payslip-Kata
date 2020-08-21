@@ -36,8 +36,11 @@ namespace calculator
           return (grossIncome - incomeTax);
         }
 
-        public static int calculateSuper(Dictionary<string, string> userDataSet){
-          return 0;
+        public static int calculateSuper(Dictionary<string, string> userDataSet, int grossIncome){
+          double rate = double.Parse(userDataSet["superRate"])/100;
+          double super = grossIncome * rate;
+          int superInt = Convert.ToInt32(super);
+          return superInt;
         }
     }
 }
