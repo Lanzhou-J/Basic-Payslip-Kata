@@ -18,5 +18,6 @@ namespace payslip
         AnnualSalary = employeeAnnualSalary;
         SuperRate = employeeSuperRate;
       }
+     
     }
 }
