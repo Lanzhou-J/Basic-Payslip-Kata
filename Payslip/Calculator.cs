@@ -1,9 +1,7 @@
 using System;
-using userinput;
-using tool;
 using System.Collections.Generic;
 
-namespace calculator
+namespace payslip
 {
     class Calculator
     {

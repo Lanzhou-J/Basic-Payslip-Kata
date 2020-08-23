@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic; 
-namespace tool
+namespace payslip
 {
     public static class Tool
     {

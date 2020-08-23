@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
-using tool;
 
-namespace userinput
+namespace payslip
 {
     public class UserInput
     {
