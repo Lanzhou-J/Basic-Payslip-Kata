@@ -901,6 +901,16 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "payslip/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/payslip.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/payslip.dll": {}
+        }
       }
     }
   },
@@ -3494,12 +3504,18 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "payslip/1.0.0": {
+      "type": "project",
+      "path": "../Payslip/payslip.csproj",
+      "msbuildProject": "../Payslip/payslip.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "coverlet.collector >= 1.2.0",
+      "payslip >= 1.0.0",
       "xunit >= 2.4.0",
       "xunit.runner.visualstudio >= 2.4.0"
     ]
@@ -3527,7 +3543,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/lanzhou.jiang/Desktop/C-sharp/payslip/Payslip/payslip.csproj": {
+              "projectPath": "/Users/lanzhou.jiang/Desktop/C-sharp/payslip/Payslip/payslip.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
