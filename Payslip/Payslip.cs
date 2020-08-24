@@ -23,5 +23,9 @@ namespace payslip
     PaymentStartDate = paymentStartDate;
     PaymentEndDate = paymentEndDate;
    }
+   //add functions based on requirement - verb phrases
+ 
   }
+
+  
 }
