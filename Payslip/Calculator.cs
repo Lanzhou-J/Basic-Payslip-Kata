@@ -5,7 +5,7 @@ namespace payslip
 {
     static class TaxCalculator
     {
-      public static int calculateTax(Salary annualSalary)
+      public static Salary CalculateTax(Salary annualSalary)
         { double tax;
           double annualSalaryAmount = Decimal.ToDouble(annualSalary.Amount);
           if(annualSalaryAmount<=18200){
@@ -20,19 +20,14 @@ namespace payslip
             tax = 54232 + (annualSalaryAmount - 54232)*0.45;
           }
           double taxPerMonth = tax/12;
-          int incomeTax = Convert.ToInt32(Math.Ceiling(taxPerMonth));
-          return incomeTax;
+          return new Salary(amount:Convert.ToDecimal(taxPerMonth));
         }
 
-        public static int calculateNetIncome(int grossIncome, int incomeTax){
-          return (grossIncome - incomeTax);
-        }
-
-        public static int calculateSuper(Dictionary<string, string> userDataSet, int grossIncome){
-          double rate = double.Parse(userDataSet["superRate"])/100;
-          double super = grossIncome * rate;
-          int superInt = Convert.ToInt32(super);
-          return superInt;
-        }
+      // public static int calculateSuper(Dictionary<string, string> userDataSet, int grossIncome){
+        //   double rate = double.Parse(userDataSet["superRate"])/100;
+        //   double super = grossIncome * rate;
+        //   int superInt = Convert.ToInt32(super);
+        //   return superInt;
+        // }
     }
 }
