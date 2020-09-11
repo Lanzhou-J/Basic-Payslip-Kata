@@ -53,6 +53,11 @@ namespace payslip
             var annualSalary = AskInt("Please enter your annual salary: ");
             return new Salary(amount:annualSalary);
         }
+        
+        public Work CollectWorkDetails(Salary annualSalary) {
+            var startYear = AskInt("Please input your work start year: ");
+            return new Work(startYear:startYear, annualSalary: annualSalary);
+        }
 
     }
 }

@@ -21,7 +21,7 @@ namespace payslip
                 {
                     Employee newEmployee = newEmployeeInput.CollectUserDetails();
                     Salary annualSalary = newEmployeeInput.CollectSalaryDetails();
-                    Work newWork = newUserInput.CollectWorkDetails(annualSalary);
+                    Work newWork = newEmployeeInput.CollectWorkDetails(annualSalary);
                     Calculator newCalculator = new Calculator();
 
                     EmployeeReport newReport = new EmployeeReport(user:newUser, work:newWork, calculator:newCalculator);
