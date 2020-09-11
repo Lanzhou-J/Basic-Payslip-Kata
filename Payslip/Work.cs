@@ -2,13 +2,13 @@ namespace payslip
 {
     public class Work
     {
-        public int StartYear { get; private set; }
+        public string StartDate { get; private set; }
         public Salary AnnualSalary { get; private set; }
         
 
-        public Work(int startYear, Salary annualSalary)
+        public Work(string startDate, Salary annualSalary)
         {
-            StartYear = startYear;
+            StartDate = startDate;
             AnnualSalary = annualSalary;
             
         }

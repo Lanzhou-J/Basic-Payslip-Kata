@@ -1,32 +1,27 @@
-// using System;
-// using System.Collections.Generic; 
+using System;
 namespace payslip
 {
   public class Payslip
   {
-   public string PaymentStartDate
-   {get; set;}
-   public string PaymentEndDate
-   {get; set;}
-   public int GrossIncome
-   {get; set;}
-   public int IncomeTax
-   {get; set;}
-   public int NetIncome
-   {get; set;}
-   public int Super
-   {get; set;}
+      private readonly Employee _employee;
+      private readonly Work _work;
 
-   public Employee employee;
-   public Payslip(string paymentStartDate, string paymentEndDate, Employee employeeInput){
-    employee = employeeInput;
-    PaymentStartDate = paymentStartDate;
-    PaymentEndDate = paymentEndDate;
-   }
-   //add functions based on requirement - verb phrases
-    public Payslip generatePayslip(){
-      return null;
-    }
+      public Payslip(Employee employee, Work work)
+      {
+          _employee = employee;
+          _work = work;
+          
+      }
+
+      public void Print()
+      {
+          Console.WriteLine();
+          Console.WriteLine("Your payslip has been generated:"); 
+          Console.WriteLine(); 
+          Console.WriteLine("Name: "+ _employee.GetFullname());
+          Console.WriteLine("Gross Income: "  + _work.CalculateMonthlySalary().RoundedAmount);
+            
+      }
   }
 
   

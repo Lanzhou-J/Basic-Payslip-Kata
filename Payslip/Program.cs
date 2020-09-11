@@ -24,8 +24,8 @@ namespace payslip
                     Work newWork = newEmployeeInput.CollectWorkDetails(annualSalary);
                     Calculator newCalculator = new Calculator();
 
-                    EmployeeReport newReport = new EmployeeReport(user:newUser, work:newWork, calculator:newCalculator);
-                    newReport.PrintReport();
+                    Payslip newPayslip = new Payslip(employee:newEmployee, work:newWork);
+                    newPayslip.Print();
 
                     adding = false;
                 }

@@ -8,9 +8,6 @@ namespace payslip
         {
               Console.WriteLine("");
         }
-        public static void greetUser(){
-            Console.WriteLine("Welcome to the payslip generator!");
-          }
         public static void thankUser(){
             Console.WriteLine("Thank you for using MYOB!");
           }
