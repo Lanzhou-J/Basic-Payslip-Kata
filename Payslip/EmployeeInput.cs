@@ -49,14 +49,14 @@ namespace payslip
             return new Employee(firstname, surname);
         }
         
-        public Salary CollectSalaryDetails() {
+        public Money CollectSalaryDetails() {
             var annualSalary = AskInt("Please enter your annual salary: ");
-            return new Salary(amount:annualSalary);
+            return new Money(amount:annualSalary);
         }
         
-        public Work CollectWorkDetails(Salary annualSalary) {
+        public Work CollectWorkDetails(Money annualMoney) {
             
-            return new Work(annualSalary: annualSalary);
+            return new Work(annualSalary: annualMoney);
         }
 
         public PaymentPeriod CollectPaymentDetails()

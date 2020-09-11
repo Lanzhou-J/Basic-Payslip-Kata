@@ -1,28 +1,28 @@
 using System;
 namespace payslip
 {
-    public class Salary
+    public class Money
     {
         private string _currency;
         public decimal Amount { get; private set; }
 
         public int RoundedAmount { get; private set; }
 
-        public Salary(string currency, decimal amount)
+        public Money(string currency, decimal amount)
         {
             _currency = currency;
             Amount = amount;
-            RoundedAmount = RoundSalary(amount);
+            RoundedAmount = Round(amount);
         }
         
-        public Salary(decimal amount)
+        public Money(decimal amount)
         {
             _currency = "AUD";
             Amount = amount;
-            RoundedAmount = RoundSalary(amount);
+            RoundedAmount = Round(amount);
         }
 
-        private int RoundSalary(decimal amount)
+        private int Round(decimal amount)
         {
             var truncate = Math.Truncate(amount);
             if ((amount - truncate) < (decimal) 0.5)

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace payslip
 {
-    static class TaxCalculator
+    static class Calculator
     {
-      public static Salary CalculateTax(Salary annualSalary)
+      public static Money CalculateTax(Money annualSalary)
         { double tax;
           double annualSalaryAmount = Decimal.ToDouble(annualSalary.Amount);
           if(annualSalaryAmount<=18200){
@@ -20,7 +20,7 @@ namespace payslip
             tax = 54232 + (annualSalaryAmount - 54232)*0.45;
           }
           double taxPerMonth = tax/12;
-          return new Salary(amount:Convert.ToDecimal(taxPerMonth));
+          return new Money(amount:Convert.ToDecimal(taxPerMonth));
         }
 
       // public static int calculateSuper(Dictionary<string, string> userDataSet, int grossIncome){

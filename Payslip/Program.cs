@@ -25,10 +25,9 @@ namespace payslip
                 try
                 {
                     Employee newEmployee = newEmployeeInput.CollectUserDetails();
-                    Salary annualSalary = newEmployeeInput.CollectSalaryDetails();
+                    Money annualSalary = newEmployeeInput.CollectSalaryDetails();
                     PaymentPeriod newPaymentPeriod = newEmployeeInput.CollectPaymentDetails();
                     Work newWork = new Work(annualSalary);
-                    TaxCalculator newTaxCalculator = new TaxCalculator();
 
                     Payslip newPayslip = new Payslip(employee:newEmployee, work:newWork, paymentPeriod:newPaymentPeriod);
                     newPayslip.Print();
