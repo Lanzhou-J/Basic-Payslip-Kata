@@ -5,13 +5,7 @@ namespace payslip
 {
     class Calculator
     {
-        public static int calculateGrossIncome(Dictionary<string, string> userDataSet)
-        {
-          int annualSalary = int.Parse(userDataSet["annualSalary"]);
-          int grossIncome = annualSalary/12;
-          return grossIncome;
-        }
-        public static int calculateTax(Dictionary<string, string> userDataSet)
+      public static int calculateTax(Dictionary<string, string> userDataSet)
         { double tax;
           double annualSalary = double.Parse(userDataSet["annualSalary"]);
           if(annualSalary<=18200){
