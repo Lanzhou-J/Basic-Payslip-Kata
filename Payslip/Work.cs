@@ -2,17 +2,13 @@ namespace payslip
 {
     public class Work
     {
-        public string StartDate { get; private set; }
-        public string EndDate { get; private set; }
+
         public Salary AnnualSalary { get; private set; }
         
 
-        public Work(string startDate, string endDate, Salary annualSalary)
+        public Work( Salary annualSalary)
         {
-            StartDate = startDate;
-            EndDate = endDate;
             AnnualSalary = annualSalary;
-            
         }
         
         
@@ -23,10 +19,6 @@ namespace payslip
             return monthlySalary;
         }
 
-        public string GetPayPeriod()
-        {
-            var payPeriod = StartDate + " - " + EndDate;
-            return payPeriod;
-        }
+
     }
 }

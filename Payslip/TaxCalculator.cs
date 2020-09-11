@@ -3,21 +3,21 @@ using System.Collections.Generic;
 
 namespace payslip
 {
-    class Calculator
+    static class TaxCalculator
     {
-      public static int calculateTax(Dictionary<string, string> userDataSet)
+      public static int calculateTax(Salary annualSalary)
         { double tax;
-          double annualSalary = double.Parse(userDataSet["annualSalary"]);
-          if(annualSalary<=18200){
+          double annualSalaryAmount = Decimal.ToDouble(annualSalary.Amount);
+          if(annualSalaryAmount<=18200){
             tax = 0;
-          }else if(annualSalary>18200 && annualSalary<=37000){
-            tax = annualSalary * 0.19;
-          }else if(annualSalary>37000 && annualSalary<=87000){
-            tax = 3572 + (annualSalary - 37000)*0.325;
-          }else if(annualSalary>87000 && annualSalary<=180000){
-            tax = 19822 + (annualSalary - 87000)*0.37;
+          }else if(annualSalaryAmount>18200 && annualSalaryAmount<=37000){
+            tax = annualSalaryAmount * 0.19;
+          }else if(annualSalaryAmount>37000 && annualSalaryAmount<=87000){
+            tax = 3572 + (annualSalaryAmount - 37000)*0.325;
+          }else if(annualSalaryAmount>87000 && annualSalaryAmount<=180000){
+            tax = 19822 + (annualSalaryAmount - 87000)*0.37;
           }else{
-            tax = 54232 + (annualSalary - 54232)*0.45;
+            tax = 54232 + (annualSalaryAmount - 54232)*0.45;
           }
           double taxPerMonth = tax/12;
           int incomeTax = Convert.ToInt32(Math.Ceiling(taxPerMonth));

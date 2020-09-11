@@ -23,12 +23,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb6d8102-4624-4a13-8f7a-02912629d02b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Payslip/PaymentPeriod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.payslip.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.payslip.dir/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.payslip.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.payslip.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payslip/Calculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/TaxCalculator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Payslip/EmployeeInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/EmployeeInput.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Payslip/Payslip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/Payslip.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payslip/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Payslip/Work.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/Work.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Payslip/bin/Debug/netcoreapp3.1/payslip.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/bin/Debug/netcoreapp3.1/payslip.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Payslip/bin/Debug/netcoreapp3.1/payslip.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/bin/Debug/netcoreapp3.1/payslip.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payslip/obj/Debug/netcoreapp3.1/payslip.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/obj/Debug/netcoreapp3.1/payslip.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Payslip/obj/Debug/netcoreapp3.1/payslip.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/obj/Debug/netcoreapp3.1/payslip.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Payslip/obj/Debug/netcoreapp3.1/payslip.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/obj/Debug/netcoreapp3.1/payslip.pdb" afterDir="false" />
     </list>
@@ -46,10 +51,13 @@
         <option value="$PROJECT_DIR$/Payslip/Employee.cs" />
         <option value="$PROJECT_DIR$/Payslip/Salary.cs" />
         <option value="$PROJECT_DIR$/Payslip/Tool.cs" />
-        <option value="$PROJECT_DIR$/Payslip/Program.cs" />
+        <option value="$PROJECT_DIR$/Payslip/Calculator.cs" />
         <option value="$PROJECT_DIR$/Payslip/Work.cs" />
-        <option value="$PROJECT_DIR$/Payslip/EmployeeInput.cs" />
+        <option value="$PROJECT_DIR$/Payslip/Payment.cs" />
         <option value="$PROJECT_DIR$/Payslip/Payslip.cs" />
+        <option value="$PROJECT_DIR$/Payslip/EmployeeInput.cs" />
+        <option value="$PROJECT_DIR$/Payslip/Program.cs" />
+        <option value="$PROJECT_DIR$/Payslip/TaxCalculator.cs" />
       </list>
     </option>
   </component>
@@ -91,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599786726093</updated>
-      <workItem from="1599786731788" duration="2527000" />
+      <workItem from="1599786731788" duration="3839000" />
     </task>
     <servers />
   </component>
@@ -115,21 +123,21 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1463" height="220" key="GridCell.Tab.0.bottom" timestamp="1599789150000">
+    <state width="1463" height="220" key="GridCell.Tab.0.bottom" timestamp="1599790209368">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1463" height="220" key="GridCell.Tab.0.bottom/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1599789150000" />
-    <state width="1463" height="220" key="GridCell.Tab.0.center" timestamp="1599789149998">
+    <state width="1463" height="220" key="GridCell.Tab.0.bottom/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1599790209368" />
+    <state width="1463" height="220" key="GridCell.Tab.0.center" timestamp="1599790209367">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1463" height="220" key="GridCell.Tab.0.center/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1599789149998" />
-    <state width="1463" height="220" key="GridCell.Tab.0.left" timestamp="1599789149997">
+    <state width="1463" height="220" key="GridCell.Tab.0.center/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1599790209367" />
+    <state width="1463" height="220" key="GridCell.Tab.0.left" timestamp="1599790209366">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1463" height="220" key="GridCell.Tab.0.left/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1599789149997" />
-    <state width="1463" height="220" key="GridCell.Tab.0.right" timestamp="1599789149999">
+    <state width="1463" height="220" key="GridCell.Tab.0.left/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1599790209366" />
+    <state width="1463" height="220" key="GridCell.Tab.0.right" timestamp="1599790209368">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1463" height="220" key="GridCell.Tab.0.right/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1599789149999" />
+    <state width="1463" height="220" key="GridCell.Tab.0.right/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1599790209368" />
   </component>
 </project>

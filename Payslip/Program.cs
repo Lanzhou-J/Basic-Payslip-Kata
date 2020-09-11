@@ -26,10 +26,11 @@ namespace payslip
                 {
                     Employee newEmployee = newEmployeeInput.CollectUserDetails();
                     Salary annualSalary = newEmployeeInput.CollectSalaryDetails();
-                    Work newWork = newEmployeeInput.CollectWorkDetails(annualSalary);
-                    Calculator newCalculator = new Calculator();
+                    PaymentPeriod newPaymentPeriod = newEmployeeInput.CollectPaymentDetails();
+                    Work newWork = new Work(annualSalary);
+                    TaxCalculator newTaxCalculator = new TaxCalculator();
 
-                    Payslip newPayslip = new Payslip(employee:newEmployee, work:newWork);
+                    Payslip newPayslip = new Payslip(employee:newEmployee, work:newWork, paymentPeriod:newPaymentPeriod);
                     newPayslip.Print();
 
                     adding = false;

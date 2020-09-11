@@ -12,7 +12,6 @@
       <e p="payslip" t="IncludeRecursive">
         <e p=".gitignore" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Calculator.cs" t="Include" />
         <e p="Employee.cs" t="Include" />
         <e p="EmployeeInput.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
@@ -22,11 +21,12 @@
             </e>
           </e>
         </e>
+        <e p="PaymentPeriod.cs" t="Include" />
         <e p="Payslip.cs" t="Include" />
         <e p="payslip.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Salary.cs" t="Include" />
-        <e p="Tool.cs" t="Include" />
+        <e p="TaxCalculator.cs" t="Include" />
         <e p="Work.cs" t="Include" />
       </e>
       <e p="PayslipTests" t="IncludeRecursive">
