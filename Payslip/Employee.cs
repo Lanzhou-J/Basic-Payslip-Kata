@@ -1,23 +1,19 @@
-// using System;
-// using System.Collections.Generic; 
 namespace payslip
 {
     public class Employee
     {
-      public string Firstname
-      {get; set;}
-      public string Lastname
-      {get; set;}
-      public int AnnualSalary
-      {get; set;}
-      public int SuperRate
-      {get; set;}
-      public Employee(string employeeFirstname, string employeeLastname, int employeeAnnualSalary, int employeeSuperRate){
-        Firstname = employeeFirstname;
-        Lastname = employeeLastname;
-        AnnualSalary = employeeAnnualSalary;
-        SuperRate = employeeSuperRate;
+      private string Firstname {get; set;}
+      public string Surname {get; set;}
+      
+      public Employee(string firstname, string surname){
+        Firstname = firstname;
+        Surname = surname;
       }
-     
+
+      public string GetFullname()
+      {
+          var fullName = Firstname + " " + Surname;
+          return fullName;
+      }
     }
 }

@@ -11,7 +11,7 @@ namespace payslip
             Tool.SeparateCode();
 
             Dictionary<string, string> userDataSet = new Dictionary<string, string>(); 
-            userDataSet = UserInput.UserInputMain();
+            userDataSet = EmployeeInput.UserInputMain();
 
             int grossIncome = Calculator.calculateGrossIncome(userDataSet);
             int incomeTax = Calculator.calculateTax(userDataSet);

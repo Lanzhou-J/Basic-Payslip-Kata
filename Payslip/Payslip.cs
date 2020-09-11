@@ -24,7 +24,9 @@ namespace payslip
     PaymentEndDate = paymentEndDate;
    }
    //add functions based on requirement - verb phrases
- 
+    public Payslip generatePayslip(){
+      return null;
+    }
   }
 
   
