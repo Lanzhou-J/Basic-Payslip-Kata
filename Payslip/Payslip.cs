@@ -19,7 +19,9 @@ namespace payslip
           Console.WriteLine("Your payslip has been generated:"); 
           Console.WriteLine(); 
           Console.WriteLine("Name: "+ _employee.GetFullname());
+          Console.WriteLine("Pay Period: "+ _work.GetPayPeriod());
           Console.WriteLine("Gross Income: "  + _work.CalculateMonthlySalary().RoundedAmount);
+          
             
       }
   }

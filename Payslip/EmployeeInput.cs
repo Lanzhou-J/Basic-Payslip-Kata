@@ -56,7 +56,8 @@ namespace payslip
         
         public Work CollectWorkDetails(Salary annualSalary) {
             var startDate = Ask("Please enter your payment start date: ");
-            return new Work(startDate:startDate, annualSalary: annualSalary);
+            var endDate = Ask("Please enter your payment end date: ");
+            return new Work(startDate:startDate, annualSalary: annualSalary, endDate:endDate);
         }
 
     }
