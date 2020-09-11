@@ -9,6 +9,11 @@ namespace payslip
         {
             Console.WriteLine("Welcome to the payslip generator!");
         }
+        
+        private static void ThankUser(){
+            Console.WriteLine("");
+            Console.WriteLine("Thank you for using MYOB!");
+        }
         static void Main(string[] args)
         {
             WelcomeUser();
@@ -35,6 +40,7 @@ namespace payslip
                     Console.WriteLine("Please try again");
                 }
             }
+            ThankUser();
         }
     }
 }
