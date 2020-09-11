@@ -5,36 +5,36 @@ namespace payslip
 {
     class Program
     {
+        private static void WelcomeUser()
+        {
+            Console.WriteLine("Welcome to the payslip generator!");
+        }
         static void Main(string[] args)
         {
-            Tool.greetUser();
-            Tool.SeparateCode();
+            WelcomeUser();
+            EmployeeInput newEmployeeInput = new EmployeeInput();
 
-            Dictionary<string, string> userDataSet = new Dictionary<string, string>(); 
-            userDataSet = EmployeeInput.UserInputMain();
+            var adding = true;
+            while (adding)
+            {
+                try
+                {
+                    Employee newEmployee = newEmployeeInput.CollectUserDetails();
+                    Salary annualSalary = newEmployeeInput.CollectSalaryDetails();
+                    Work newWork = newUserInput.CollectWorkDetails(annualSalary);
+                    Calculator newCalculator = new Calculator();
 
-            int grossIncome = Calculator.calculateGrossIncome(userDataSet);
-            int incomeTax = Calculator.calculateTax(userDataSet);
-            int netIncome = Calculator.calculateNetIncome(grossIncome, incomeTax);
-            int super = Calculator.calculateSuper(userDataSet, grossIncome);
+                    EmployeeReport newReport = new EmployeeReport(user:newUser, work:newWork, calculator:newCalculator);
+                    newReport.PrintReport();
 
-            Dictionary<string, string> paySlipDataSet = new Dictionary<string, string>(); 
-
-            Tool.SeparateCode();
-            paySlipDataSet["Name"] = userDataSet["firstname"] + " " + userDataSet["surname"];
-            paySlipDataSet["Pay Period"] = userDataSet["paymentStartDate"] + " - " + userDataSet["paymentEndDate"];
-            paySlipDataSet["Gross Income"] = grossIncome.ToString();
-            paySlipDataSet["Income Tax"] = incomeTax.ToString();
-            paySlipDataSet["Net Income"] = netIncome.ToString();
-            paySlipDataSet["Super"] = super.ToString();
-            
-            Tool.PrintDictionary(paySlipDataSet);
-
-            Tool.SeparateCode();
-            Tool.thankUser();
-            
-            // Employee employeeJohn = new Employee("John", "Doe", 60050, 9);
-            // Console.WriteLine(employeeJohn.Firstname);
+                    adding = false;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                    Console.WriteLine("Please try again");
+                }
+            }
         }
     }
 }

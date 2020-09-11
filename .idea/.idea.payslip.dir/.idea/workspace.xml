@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb6d8102-4624-4a13-8f7a-02912629d02b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Payslip/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/Employee.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Payslip/Payslip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/Payslip.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Payslip/bin/Debug/netcoreapp3.1/payslip.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/bin/Debug/netcoreapp3.1/payslip.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Payslip/bin/Debug/netcoreapp3.1/payslip.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/bin/Debug/netcoreapp3.1/payslip.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Payslip/obj/Debug/netcoreapp3.1/payslip.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/obj/Debug/netcoreapp3.1/payslip.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Payslip/obj/Debug/netcoreapp3.1/payslip.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/obj/Debug/netcoreapp3.1/payslip.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Payslip/obj/Debug/netcoreapp3.1/payslip.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/obj/Debug/netcoreapp3.1/payslip.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Payslip/obj/Debug/netcoreapp3.1/payslip.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/obj/Debug/netcoreapp3.1/payslip.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Payslip/obj/payslip.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/obj/payslip.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PayslipTests/obj/Debug/netcoreapp3.1/PayslipTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PayslipTests/obj/Debug/netcoreapp3.1/PayslipTests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PayslipTests/obj/PayslipTests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/PayslipTests/obj/PayslipTests.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payslip/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +19,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Payslip/Employee.cs" />
+        <option value="$PROJECT_DIR$/Payslip/EmployeeInput.cs" />
+        <option value="$PROJECT_DIR$/Payslip/Program.cs" />
       </list>
     </option>
   </component>
@@ -40,6 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
     <configuration name="payslip" type="DotNetProject" factoryName=".NET Project">
@@ -69,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599786726093</updated>
-      <workItem from="1599786731788" duration="318000" />
+      <workItem from="1599786731788" duration="929000" />
     </task>
     <servers />
   </component>
@@ -78,7 +71,36 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1463" height="220" key="GridCell.Tab.0.bottom" timestamp="1599786915937">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1463" height="220" key="GridCell.Tab.0.bottom/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1599786915937" />
+    <state width="1463" height="220" key="GridCell.Tab.0.center" timestamp="1599786915935">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1463" height="220" key="GridCell.Tab.0.center/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1599786915935" />
+    <state width="1463" height="220" key="GridCell.Tab.0.left" timestamp="1599786915934">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1463" height="220" key="GridCell.Tab.0.left/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1599786915934" />
+    <state width="1463" height="220" key="GridCell.Tab.0.right" timestamp="1599786915936">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1463" height="220" key="GridCell.Tab.0.right/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1599786915936" />
   </component>
 </project>

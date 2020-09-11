@@ -48,6 +48,11 @@ namespace payslip
             ThrowExceptionWhenNameIsInvalid(firstname,surname);
             return new Employee(firstname, surname);
         }
+        
+        public Salary CollectSalaryDetails() {
+            var annualSalary = AskInt("Please enter your annual salary: ");
+            return new Salary(amount:annualSalary);
+        }
 
     }
 }
