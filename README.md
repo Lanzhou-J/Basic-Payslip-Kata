@@ -66,7 +66,4 @@ Thank you for using MYOB!
 
 ---
 
-My Solution:
-UML Diagram:
 
-![UML](UML1.png)
