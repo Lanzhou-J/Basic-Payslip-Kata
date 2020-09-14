@@ -6,19 +6,22 @@ namespace payslip
     static class Calculator
     {
       public static Money CalculateTax(Money annualSalary, List<TaxRate> taxRule)
-        { double tax;
+        { double tax = 0;
+          int listCount = taxRule.Count;
           double annualSalaryAmount = Decimal.ToDouble(annualSalary.Amount);
           if(annualSalaryAmount<=taxRule[0].UpperBoundary)
           {
             tax = 0;
-          }else if(annualSalaryAmount > taxRule[1].LowerBoundary && annualSalaryAmount <= taxRule[1].UpperBoundary){
-            tax = taxRule[1].BaseTax + (annualSalaryAmount - taxRule[1].LowerBoundary) * taxRule[1].TaxPerUnit/100;
-          }else if(annualSalaryAmount > taxRule[2].LowerBoundary && annualSalaryAmount <= taxRule[2].UpperBoundary){
-            tax = taxRule[2].BaseTax + (annualSalaryAmount - taxRule[2].LowerBoundary) * taxRule[2].TaxPerUnit/100;
-          }else if(annualSalaryAmount > taxRule[3].LowerBoundary && annualSalaryAmount <= taxRule[3].UpperBoundary){
-            tax = taxRule[3].BaseTax + (annualSalaryAmount - taxRule[3].LowerBoundary) * taxRule[3].TaxPerUnit/100;
+          }else if (annualSalaryAmount > taxRule[listCount-1].LowerBoundary)
+          {
+            tax = taxRule[listCount-1].BaseTax + (annualSalaryAmount - taxRule[listCount-1].LowerBoundary)*taxRule[listCount-1].TaxPerUnit/100;
           }else{
-            tax = taxRule[4].BaseTax + (annualSalaryAmount - taxRule[4].LowerBoundary)*taxRule[4].TaxPerUnit/100;
+            foreach (var item in taxRule)
+            {
+              if(annualSalaryAmount > item.LowerBoundary && annualSalaryAmount <= item.UpperBoundary){
+                tax = item.BaseTax + (annualSalaryAmount - item.LowerBoundary) * item.TaxPerUnit/100;
+              }
+            }
           }
           double taxPerMonth = tax/12;
           return new Money(amount:Convert.ToDecimal(taxPerMonth));
