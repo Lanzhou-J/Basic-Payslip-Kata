@@ -4,31 +4,38 @@ namespace payslip
     {
 
         public Money AnnualSalary { get; private set; }
-        
+        public int SuperRate { get; private set; }
 
-        public Work( Money annualSalary)
+
+        public Work( Money annualSalary, int superRate)
         {
             AnnualSalary = annualSalary;
+            SuperRate = superRate;
         }
         
         
-        public Money CalculateMonthlySalary()
+        public Money GetMonthlySalary()
         {
-            decimal monthlySalaryAmount = AnnualSalary.Amount/12;
-            Money monthlySalary = new Money(amount:monthlySalaryAmount);
+            Money monthlySalary = Calculator.CalculateMonthlySalary(annualSalary:AnnualSalary);
             return monthlySalary;
         }
 
         public Money GetTax()
         {
-            var taxAmount = Calculator.CalculateTax(annualSalary: AnnualSalary);
-            return taxAmount;
+            var tax = Calculator.CalculateTax(annualSalary: AnnualSalary);
+            return tax;
         }
 
         public Money GetNetIncome()
         {
-            var netIncomeAmount = CalculateMonthlySalary().RoundedAmount -  GetTax().RoundedAmount;
+            var netIncomeAmount = GetMonthlySalary().RoundedAmount -  GetTax().RoundedAmount;
             return new Money(amount: netIncomeAmount);
+        }
+        
+        public Money GetSuper()
+        {
+            var super = Calculator.CalculateSuper(GetMonthlySalary(), SuperRate);
+            return super;
         }
 
 

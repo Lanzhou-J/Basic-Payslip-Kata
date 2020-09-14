@@ -3,7 +3,7 @@ namespace payslip
     public class Employee
     {
       private string Firstname {get; set;}
-      public string Surname {get; set;}
+      private string Surname {get; set;}
       
       public Employee(string firstname, string surname){
         Firstname = firstname;

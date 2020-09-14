@@ -22,10 +22,10 @@ namespace payslip
           Console.WriteLine(); 
           Console.WriteLine("Name: "+ _employee.GetFullname());
           Console.WriteLine("Pay Period: "+ _paymentPeriod.GetPayPeriod());
-          Console.WriteLine("Gross Income: "  + _work.CalculateMonthlySalary().RoundedAmount);
+          Console.WriteLine("Gross Income: "  + _work.GetMonthlySalary().RoundedAmount);
           Console.WriteLine("Income Tax: " + _work.GetTax().RoundedAmount);
           Console.WriteLine("Net Income: " + _work.GetNetIncome().RoundedAmount);
-          Console.WriteLine("Super: ");
+          Console.WriteLine("Super: "+ _work.GetSuper().RoundedAmount);
 
       }
   }

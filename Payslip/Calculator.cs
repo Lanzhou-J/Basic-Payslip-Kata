@@ -5,6 +5,7 @@ namespace payslip
 {
     static class Calculator
     {
+      //This tax rule can change, should modify it.
       public static Money CalculateTax(Money annualSalary)
         { double tax;
           double annualSalaryAmount = Decimal.ToDouble(annualSalary.Amount);
@@ -23,11 +24,18 @@ namespace payslip
           return new Money(amount:Convert.ToDecimal(taxPerMonth));
         }
 
-      // public static int calculateSuper(Dictionary<string, string> userDataSet, int grossIncome){
-        //   double rate = double.Parse(userDataSet["superRate"])/100;
-        //   double super = grossIncome * rate;
-        //   int superInt = Convert.ToInt32(super);
-        //   return superInt;
-        // }
+      public static Money CalculateSuper(Money grossIncome, int superRate){
+          double rate = Convert.ToDouble(superRate)/100;
+          double super = grossIncome.RoundedAmount * rate;
+          int superAmount = Convert.ToInt32(super);
+          return new Money(amount: superAmount);
+        }
+      
+      public static Money CalculateMonthlySalary(Money annualSalary)
+      {
+        decimal monthlySalaryAmount = annualSalary.Amount/12;
+        Money monthlySalary = new Money(amount:monthlySalaryAmount);
+        return monthlySalary;
+      }
     }
 }
