@@ -5,20 +5,20 @@ namespace payslip
 {
     static class Calculator
     {
-      //This tax rule can change, should modify it.
-      public static Money CalculateTax(Money annualSalary)
+      public static Money CalculateTax(Money annualSalary, List<TaxRate> taxRule)
         { double tax;
           double annualSalaryAmount = Decimal.ToDouble(annualSalary.Amount);
-          if(annualSalaryAmount<=18200){
+          if(annualSalaryAmount<=taxRule[0].UpperBoundary)
+          {
             tax = 0;
-          }else if(annualSalaryAmount>18200 && annualSalaryAmount<=37000){
-            tax = annualSalaryAmount * 0.19;
-          }else if(annualSalaryAmount>37000 && annualSalaryAmount<=87000){
-            tax = 3572 + (annualSalaryAmount - 37000)*0.325;
-          }else if(annualSalaryAmount>87000 && annualSalaryAmount<=180000){
-            tax = 19822 + (annualSalaryAmount - 87000)*0.37;
+          }else if(annualSalaryAmount > taxRule[1].LowerBoundary && annualSalaryAmount <= taxRule[1].UpperBoundary){
+            tax = taxRule[1].BaseTax + (annualSalaryAmount - taxRule[1].LowerBoundary) * taxRule[1].TaxPerUnit/100;
+          }else if(annualSalaryAmount > taxRule[2].LowerBoundary && annualSalaryAmount <= taxRule[2].UpperBoundary){
+            tax = taxRule[2].BaseTax + (annualSalaryAmount - taxRule[2].LowerBoundary) * taxRule[2].TaxPerUnit/100;
+          }else if(annualSalaryAmount > taxRule[3].LowerBoundary && annualSalaryAmount <= taxRule[3].UpperBoundary){
+            tax = taxRule[3].BaseTax + (annualSalaryAmount - taxRule[3].LowerBoundary) * taxRule[3].TaxPerUnit/100;
           }else{
-            tax = 54232 + (annualSalaryAmount - 54232)*0.45;
+            tax = taxRule[4].BaseTax + (annualSalaryAmount - taxRule[4].LowerBoundary)*taxRule[4].TaxPerUnit/100;
           }
           double taxPerMonth = tax/12;
           return new Money(amount:Convert.ToDecimal(taxPerMonth));

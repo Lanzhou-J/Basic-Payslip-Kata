@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace payslip
 {
     public class Work
@@ -20,15 +22,15 @@ namespace payslip
             return monthlySalary;
         }
 
-        public Money GetTax()
+        public Money GetTax(List<TaxRate> taxRule)
         {
-            var tax = Calculator.CalculateTax(annualSalary: AnnualSalary);
+            var tax = Calculator.CalculateTax(annualSalary: AnnualSalary, taxRule);
             return tax;
         }
 
-        public Money GetNetIncome()
+        public Money GetNetIncome(List<TaxRate> taxRule)
         {
-            var netIncomeAmount = GetMonthlySalary().RoundedAmount -  GetTax().RoundedAmount;
+            var netIncomeAmount = GetMonthlySalary().RoundedAmount -  GetTax(taxRule).RoundedAmount;
             return new Money(amount: netIncomeAmount);
         }
         
