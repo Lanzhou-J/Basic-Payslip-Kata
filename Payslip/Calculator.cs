@@ -8,6 +8,7 @@ namespace payslip
       //This tax rule can change, should modify it.
       public static Money CalculateTax(Money annualSalary)
         { double tax;
+          // Dictionary<double, double> taxRate = taxRateRule.TaxableIncomeAndCorrespondingTax;
           double annualSalaryAmount = Decimal.ToDouble(annualSalary.Amount);
           if(annualSalaryAmount<=18200){
             tax = 0;

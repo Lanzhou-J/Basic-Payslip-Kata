@@ -27,6 +27,7 @@
         <e p="Payslip.cs" t="Include" />
         <e p="payslip.csproj" t="IncludeRecursive" />
         <e p="Program.cs" t="Include" />
+        <e p="TaxRateRule.cs" t="Include" />
         <e p="Work.cs" t="Include" />
       </e>
       <e p="PayslipTests" t="IncludeRecursive">

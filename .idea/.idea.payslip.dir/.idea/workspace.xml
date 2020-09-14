@@ -22,7 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb6d8102-4624-4a13-8f7a-02912629d02b" name="Default Changelist" comment="" />
+    <list default="true" id="cb6d8102-4624-4a13-8f7a-02912629d02b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.payslip.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.payslip.dir/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.payslip.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.payslip.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payslip/Calculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/Calculator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payslip/TaxRule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Payslip/TaxRateRule.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,11 +45,13 @@
         <option value="$PROJECT_DIR$/Payslip/TaxCalculator.cs" />
         <option value="$PROJECT_DIR$/Payslip/Money.cs" />
         <option value="$PROJECT_DIR$/Payslip/Employee.cs" />
-        <option value="$PROJECT_DIR$/Payslip/Calculator.cs" />
         <option value="$PROJECT_DIR$/Payslip/Payslip.cs" />
         <option value="$PROJECT_DIR$/Payslip/Work.cs" />
         <option value="$PROJECT_DIR$/Payslip/EmployeeInput.cs" />
         <option value="$PROJECT_DIR$/Payslip/Program.cs" />
+        <option value="$PROJECT_DIR$/Payslip/TaxRule.cs" />
+        <option value="$PROJECT_DIR$/Payslip/TaxRateRule.cs" />
+        <option value="$PROJECT_DIR$/Payslip/Calculator.cs" />
       </list>
     </option>
   </component>
@@ -89,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599786726093</updated>
       <workItem from="1599786731788" duration="9864000" />
-      <workItem from="1600042951517" duration="1460000" />
+      <workItem from="1600042951517" duration="3172000" />
     </task>
     <servers />
   </component>
