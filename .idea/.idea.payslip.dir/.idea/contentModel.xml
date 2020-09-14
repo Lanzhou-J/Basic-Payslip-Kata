@@ -16,13 +16,7 @@
         <e p="Employee.cs" t="Include" />
         <e p="EmployeeInput.cs" t="Include" />
         <e p="Money.cs" t="Include" />
-        <e p="obj" t="ExcludeRecursive">
-          <e p="Debug" t="Include">
-            <e p="netcoreapp3.1" t="Include">
-              <e p="payslip.AssemblyInfo.cs" t="Include" />
-            </e>
-          </e>
-        </e>
+        <e p="obj" t="ExcludeRecursive" />
         <e p="PaymentPeriod.cs" t="Include" />
         <e p="Payslip.cs" t="Include" />
         <e p="payslip.csproj" t="IncludeRecursive" />
